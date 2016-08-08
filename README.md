@@ -25,6 +25,7 @@ First of all, I have implemented an interface for read the inputs. This interfac
 Because we can have more implementations that reads the input from other sources (like a file in a folder), I have implemented a factory that receive the type of reader the caller needs.
 
 After, I have implemented a service that judge the input messages for one case. This service needs a Criteria (implemented separately) to judge the messages and compute the score (penalty time and solved problems count) in the class that represents a Contestant. This service can have more implementations of judgement, then I have created a interface for that and a class that implements a simple judgment case. Again I have created a factory to encapsulate the instantiation process of the sevice concrete class.
-And than I have created a Main class to simulate the entire process like the requested in problem description.
 
-In the test.src source folder I have created a test class for the main processes described above (reader, criteria and jugment).
+And than, I have created a Main class to simulate the entire process like the requested in the problem description.
+
+In the test.src source folder I have created some test classes for the main processes described above (reader, criteria and jugment).
